@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>三列布局</title>
+<style type="text/css">
+/*需求：左中右三列布局，自适应*/
+*{
+	margin:0;
+	padding: 0;/*去样式*/
+}
+div{
+	text-align: center;
+	font-weight: bold;
+}
+html body .Container{
+	height: 100%;
+}
+.head{
+	height: 15%;
+	position: fixed;
+	clear: both;
+	top: 0;
+	background: black;
+	width: 100%;
+}
+.left{
+	position: relative;
+	float: left;
+	width: 20%;height: 70%;
+	top: 15%;
+	background-color: #ccc;
+}
+.center{
+	margin-left: 20%;
+	width: 60%;height: 70%;
+	background-color: #FCC;
+	position: absolute;
+	top: 15%;
+}
+.right{
+	float: right;
+	width: 20%;height: 70%;
+	top: 15%;	
+	background-color: #9CF;
+	position:relative;
+}
+.footer{
+	clear:both;
+	width: 100%;
+	height: 15%;
+	top: 85%;
+	position: absolute;
+	background-color:black;
+}
+</style>
+</head>
+<body>
+<div class="Container">
+	<div class="head">Top</div>
+	<div class="left">Left Sidebar</div>
+	<div class="center">Main Content</div>
+	<div class="right">Right</div>
+	<div class="footer">footer</div>
+</div>
+</body>
+</html>
