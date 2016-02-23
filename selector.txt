@@ -1,0 +1,7 @@
+E F{}/*后代元素选择器，所有的后代，不止包含子代*/#nav li { display:inline; } li a { font-weight:bold; 
+
+E,F/*多元素选择器，同时匹配，用，隔开*/ .main,.footer{width:900px;margin:0 auto}
+
+E>F/*子元素选择器，匹配所有E元素的子元素，仅子元素F*/ div > strong { color:#f00; }
+
+E+F/*毗邻元素选择器，匹配所有紧随E元素之后的同级元素F*/ p + p { color:#f00; }
