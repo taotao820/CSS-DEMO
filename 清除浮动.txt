@@ -1,0 +1,22 @@
+*clear
+*overflow:hidden
+*使用伪类：<div class="clearfix">
+    		<div class="left"></div>
+    		<div class="middle"></div>
+    		<div class="right"></div>
+	   </div>
+	   .clearfix::after{
+		display:block;
+		content:"";
+		clear:both;
+		}
+	   .clearfix{
+		zoom:1;/*由于ie6-7不支持:after 用zoom1触发hasLayout*/
+}
+*display:table(ie6/7不兼容)
+*IE：解决兼容，触发layout（object.currentStyle.hasLayout true||false）
+    	haslayout-clear-float:{width:1px}
+	或
+	.haslayout-clear-float:{height:1px}
+	或
+	.haslayout-clear-float:{zoom:1}
