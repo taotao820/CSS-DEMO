@@ -1,0 +1,6 @@
+想设置div高度为100%，把该div的父级元素都设置为了100%，还是不可以，找了好久找到了问题：
+“<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">”
+xhtml标准下，高度设置为100%是根据实际内容的高度来自适应的， 而不是根据父容器的高度来自适应。
+-改成这个之后<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+再设置父元素就可以了！
